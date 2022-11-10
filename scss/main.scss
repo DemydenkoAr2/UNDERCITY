@@ -1,0 +1,423 @@
+// Colors
+$black: #2B2B2B;
+$white: #F6F6F6;
+$grey: #F3F3F3;
+$greyLight: #D5D5D5;
+$greyDark: #959595;
+
+// Main Styles
+* {
+  box-sizing: border-box;  
+}
+
+/* Headline 1 */
+.h1 {
+    font-size: 66px;
+    line-height: 120%;
+}
+
+/* Headline 2 */
+.h2 {
+    font-size: 41px;
+    line-height: 120%;
+}
+
+/* Headline 3 */
+.h3 {
+    font-size: 26px;
+    line-height: 120%;
+}
+
+/* Text */
+.text {
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.btn-text {
+    font-size: 16px;
+    line-height: 120%;
+}
+
+/* Rectangle 8 */
+.rectangle-8 {
+    max-width: 285px;
+    width: 100%;
+    height: 55px;
+    border: 1px solid #2B2B2B;
+}
+
+//
+
+// .cursor {
+//     cursor: pointer;
+// }
+
+body {
+    font-family: 'SF Pro Display Font';
+    
+}
+
+main .container {
+    padding: 100px 20px 100px 20px;
+}
+
+.section {
+    width: 100%;
+}
+
+.container {
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.button {
+    transition: all 0.1s linear;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-light {
+    background: $white;
+}
+
+.wrapper__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 570px;
+    width: 100%;
+
+    h2 {
+        margin: 0 0 50px 0;
+    }
+
+    p {
+        margin: 0 0 25px 0;
+
+        &:last-child {
+            margin:  0;
+        }
+    }
+}
+
+
+// Hover
+.btn-light:hover {
+    background: $black;
+    color: $white;
+}
+
+// Hover End
+
+
+// Section Header 
+header .container {
+    padding: 35px 20px 34px 20px;
+}
+
+.section__header {
+    background: $white;
+
+    .container__header {
+
+        .container__topbar-fixed {
+            position: fixed;
+            z-index: 100;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: $white;
+
+            .container__topbar {
+                display: flex;
+                
+    
+                justify-content: space-between;
+    
+                .wrapper__logo {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                }
+    
+                .wrapper__info {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    max-width: 472px;
+                    width: 100%;
+    
+                    .phone {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .container__title {
+        max-width: 1240px;
+        width: 100%;
+        height: 776px;
+        padding: 0 20px 100px 20px;
+        margin: 55px auto 0 auto;
+
+        .wrapper-img {
+            max-width: 1240px;
+            width: 100%;
+            background-image: url(../img/title.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: center;
+
+            h1 {
+                max-width: 436px;
+                width: 100%;
+                color: $white;
+                margin: 0 36px 0 0;
+            }
+
+            .button {
+                display: none;
+            }
+        }
+    }
+}
+// Section Header End
+
+// Section About 
+.section__about {
+    background: $grey;
+    .container__about {
+        display: flex;
+
+        .wrapper__text {
+            margin: 0 60px 0 0;
+        }
+
+        .wrapper-img {
+            max-width: 570px;
+            width: 100%;
+            height: 589px;
+            background-image: url(../img/Rectangle22.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+    }
+}
+// Section About End
+
+// Section Environment
+.section__environment {
+    background: $white;
+
+    .container__environment {
+        display: flex;
+        justify-content: space-between;
+
+        .titel {
+            display: none;
+        }
+
+    }
+    
+    .wrapper__content {
+        display: flex;
+
+        .wrapper__map {
+            max-width: 570px;
+            width: 100%;
+            height: 518px;
+            margin: 0 60px 0 0;
+        }
+        
+    }
+}
+// Section Environment End
+
+// Section Style
+.section__style {
+    .container__style {
+        display: flex;
+        justify-content: space-between;
+
+        .wrapper__text {
+            margin: 0 60px 0 0;
+        }
+
+        .wrapper-img {
+            background-image: url(../img/Rectangle130.jpg);
+            max-width: 570px;
+            width: 100%;
+            height: 516px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+    }
+}
+// Section Style End
+
+// Section Advantages
+.section__advantages {
+    overflow: hidden;
+    position: relative;
+
+    .container__advantages {
+        .titel {
+            margin: 0 0 50px 0;
+        }
+
+        .swiper {
+            overflow: visible !important;
+            position: relative !important;
+          
+            .swiper-slide {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+              
+                .wrapper-img {
+                    margin: 0 0 25px 0;
+                    max-width: 570px;
+                    max-height: 614px;
+          
+                    img {
+                    width: 100%;
+                    height: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .container-swiper-button {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        margin: 0 auto;
+
+        .wrapper {
+            position: relative;
+            max-width: 1300px;
+            width: 100%;
+            margin: 0 auto;
+            height: 50px;
+
+            .swiper-button-prev {
+                color: $black;
+            }
+        
+            .swiper-button-next {
+                color: $black;
+            }
+        }
+    }
+
+    .container-swiper-pagination {
+
+        .wrapper {
+
+            .swiper-pagination-bullet {
+                width: 5px;
+                height: 5px;
+                margin: 0 25px 0 0;
+
+                &:last-child {
+                    margin: 0;
+                }
+            }
+
+            .swiper-pagination-bullets.swiper-pagination-horizontal {
+                bottom: 50px;
+                
+            }
+
+            .swiper-pagination-bullet-active {
+                background-color: #2B2B2B;
+            }
+        }
+    }
+}
+// Section Advantages End
+
+// Section Offer
+.section__offer {
+    .container__offer {
+
+        .wrapper__text {
+            margin: 0 0 50px 0;
+        }
+
+        .container__cards {
+            display: flex;
+
+            .wrapper__card {
+                display: flex;
+                flex-direction: column;
+
+                &:first-child {
+                    margin: 0 60px 0 0;
+                }
+
+                .wrapper-img {
+                    max-width: 570px;
+                    height: 608px;
+                    width: 100%;
+                    margin: 0 0 50px 0;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover; 
+                }
+
+                .wrapper-img-1 {
+                    background-image: url(../img/Rectangle126.jpg);
+                }
+
+                .wrapper-img-2 {
+                    background-image: url(../img/Rectangle127.jpg);
+                }
+
+                .wrapper__text-about {
+                    max-width: 570px;
+                    width: 100%;
+
+                    h3 {
+                        margin: 0 0 25px 0;
+                    }
+
+                    p {
+                        margin: 0 0 50px 0;
+                    }
+
+                    .button {
+                        max-width: 285px;
+                        height: 55px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border: 1px solid #2B2B2B;
+                    }
+                }
+            }
+        }
+    }
+}
+// Section Offer End
+
+
